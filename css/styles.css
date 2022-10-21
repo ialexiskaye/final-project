@@ -5,31 +5,136 @@
 /* font-family: 'Cormorant Garamond', serif; */
 /* font-family: 'Abril Fatface', cursive; */
 
-/* universal styles */
 * {
     font-family: 'Times New Roman', Times, serif;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
-/* NEED THIS HEIGHT FOR THE BODY, AND THE HTML FOR OUR HERO SECTION */
-body, html {
+/* body {
     height: 100%;
-}
+} */
 
-/* HEADER, NAV, AND FOOTER STYLES */
-header, footer {
-    border: 2px #000000;
-    padding: 5px;
-    background-color: #d3d3d3;
-}
+                /*NAV BAR STARTS HERE*/
 
-.nav-items {
-    float: right;
-}
-.nav-items::after {
-    clear: both;
-}
-.listed-nav_item {
-    display: inline-block;
+/* .top-nav{
+    block-size: ;
+} */
+
+.nav-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+  }
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #000000;
+    color: white;
     padding: 10px;
+    font-size: 16px;
+    border: none;
+    margin: 8px;
 }
+
+/* The container <nav> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px #00000033;
+    padding: 1px 0px;
+    z-index: 1;
+}
+  
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+  
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #800080;
+}
+
+.navbar{
+    background-color: #d3d3d3;
+    height: 55px;
+}
+
+.subscribe{
+    text-align: center;
+    text-decoration: none;
+    margin-left: 600px;
+}
+            /*NAV BAR ENDS HERE*/
+
+
+.img-rounds{
+    border-radius: 50%;
+}
+
+.ffloat-left{
+    float: left;
+}
+
+.editor{
+    width: 40%;
+}
+
+.editor-h{
+    font-family: 'Abril Fatface', cursive;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.editor-img{
+    float: left;
+    margin-right: 10px;
+}
+
+.editor-letter{
+    text-align: justify;
+}
+
+.cover{
+    width: 50%;
+    margin-left: 120px;
+}
+
+.cover-img{
+    float:right
+}
+
+.clearfix{
+    clear: left;
+}
+
+            /* FOOOTER STARTS HERE*/
+footer{
+    background-color: lightgray;
+    height: 35px;
+    text-align: center;
+}
+
