@@ -1,0 +1,35 @@
+/* GOOGLE IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap');
+
+/* font-family: 'Cormorant Garamond', serif; */
+/* font-family: 'Abril Fatface', cursive; */
+
+/* universal styles */
+* {
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+/* NEED THIS HEIGHT FOR THE BODY, AND THE HTML FOR OUR HERO SECTION */
+body, html {
+    height: 100%;
+}
+
+/* HEADER, NAV, AND FOOTER STYLES */
+header, footer {
+    border: 2px #000000;
+    padding: 5px;
+    background-color: #d3d3d3;
+}
+
+.nav-items {
+    float: right;
+}
+.nav-items::after {
+    clear: both;
+}
+.listed-nav_item {
+    display: inline-block;
+    padding: 10px;
+}
