@@ -8,7 +8,7 @@
 * {
     font-family: 'Times New Roman', Times, serif;
     box-sizing: border-box;
-    /* text-decoration: none; */
+    text-decoration: none;
 }
 
 
@@ -29,7 +29,6 @@ header{
     position: relative;
     height: 70px;
     z-index: 2;
-    background-color: #ffffff;
 }
 
 .nav-logo {
@@ -93,8 +92,8 @@ header{
     position: relative;
     text-align: center;
     padding: 8px;
-    border-top: 4px solid #800080;
-    background-color: #e2e1e1;
+    border-top: 3px solid #800080;
+    background-color: #f3f3f3;
     color: #ffffff;
     height: 40px;
     z-index: 1;
@@ -103,7 +102,6 @@ header{
 /* .subscribe{
     padding: 10px;
 } */
-
 
             /*NAV BAR ENDS HERE*/
 
@@ -188,8 +186,12 @@ header{
 }
 
 .other-stories{
-    width: 50%;
-    margin-left: 100px;
+    /* width: 50%;
+    margin-left: 100px; */
+    float: left;
+    width: 25%;
+    margin-bottom: 16px;
+    padding: 0 8px;
 }
 
 .os-titles{
@@ -213,8 +215,84 @@ header{
     margin-bottom: 10px;
 }
 
+            /*START OF ABOUT PAGE*/
+.hero-img{
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.596)), url(../img/Toledo.jpg);
+    height: 60%;
+    background-position: 10% 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: relative; */
+}
 
+.hero-text{
+    position: absolute;
+    text-align: center;
+    top: 45%;
+    left: 42%;
+    font-size: 30px;
+    color: #ffffff;
+}
 
+.our-story{
+    padding: 50px 400px 0px;
+    text-align: justify;
+}
+
+.our-header{
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+}
+
+.the-team{
+    background-color: #cacaca;
+    margin-top: 70px;
+}
+
+.team-header{
+    font-size: 40px;
+    padding-top: 15px;
+    padding-left: 8px;
+    /* text-decoration: solid #000000; */
+}
+
+.column {
+    float: left;
+    width: 25%;
+    margin-bottom: 20px;
+    padding: 0 8px;
+    /* background-color: #ffffff; */
+  }
+  
+  /* Display the columns below each other instead of side by side on small screens */
+  /* @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  } */
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.432);
+    background-color: #ffffff;
+  }
+  
+  .container {
+    padding: 0px 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+    padding-top: -15px;
+  }
+
+            /*END OF ABOUT PAGE*/
 
             /* FOOOTER STARTS HERE*/
 footer{
