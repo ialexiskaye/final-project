@@ -17,28 +17,24 @@ body, html {
 }
 
                 /*NAV BAR STARTS HERE*/
-header{
-    min-width: 0;
+/* header{
     background-color: transparent;
     position: relative;
-    /* z-index: 999; */
     width: 100%;
-}
+} */
 
 .header-row1{
     position: relative;
     height: 70px;
-    z-index: 2;
 }
 
 .nav-logo {
     display: block;
-    margin: 12px auto 0;
+    margin: 6px auto 0px;
     width: 120px;
     height: 60px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center center;
     background-image: url(../img/StalwartLogo.png);
   }
 
@@ -89,14 +85,12 @@ header{
 /* End of Dropdown Button */
 
 .header-row2{
-    position: relative;
+    margin: auto;
     text-align: center;
     padding: 8px;
     border-top: 3px solid #800080;
     background-color: #f3f3f3;
     color: #ffffff;
-    height: 40px;
-    z-index: 1;
 }
 
 /* .subscribe{
@@ -144,6 +138,11 @@ header{
     float:right
 }
 
+.cover-p{
+    text-align: justify;
+    width: 140px;
+}
+
 .clearfix1{
     clear: left;
 }
@@ -153,16 +152,14 @@ header{
 }
 
 .img-square{
-    width: 250px;
-    height: 250px;
-}
-
-.sfloat-left{
-    float: left;
+    width: 150px;
+    height: 150px;
 }
 
 .featured-stories{
     width: 40%;
+    float: left;
+    padding: 15px;
 }
 
 .fs-title{
@@ -186,18 +183,16 @@ header{
 }
 
 .other-stories{
-    /* width: 50%;
-    margin-left: 100px; */
     float: left;
-    width: 25%;
-    margin-bottom: 16px;
-    padding: 0 8px;
+    margin-bottom: 5px;
+    padding: 15px;
+    width: auto;
 }
+
 
 .os-titles{
     font-size: 20px;
     margin-top: -5px;
-    width: 260px;
 }
 
 .clearfix2{
@@ -205,8 +200,10 @@ header{
 }
 
 .pub{
+    position: relative;
+    margin: auto;
+    width: 60%;
     text-align: center;
-    padding: 8px;
 }
 
 .pub-h{
@@ -214,6 +211,8 @@ header{
     font-size: 25px;
     margin-bottom: 10px;
 }
+
+
 
             /*START OF ABOUT PAGE*/
 .hero-img{
@@ -256,50 +255,218 @@ header{
     /* text-decoration: solid #000000; */
 }
 
+/* .team-img{
+    height: 50px;
+} */
+
 .column {
     float: left;
-    width: 25%;
-    margin-bottom: 20px;
-    padding: 0 8px;
-    /* background-color: #ffffff; */
+    width: 12.5%;
+    margin-bottom: 5px;
+    padding: 0 5px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+/* @media screen and (max-width: 650px) {
+.column {
+    width: 100%;
+    display: block;
+}
+} */
+
+.card {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.432);
+background-color: #ffffff;
+}
+
+.container {
+padding: 0px 16px;
+}
+
+.container::after, .row::after {
+content: "";
+clear: both;
+display: table;
+}
+
+.title {
+color: grey;
+padding-top: -15px;
+}
+
+video{    
+    margin-left: 330px;
+    width: 50%;
+    padding-top: 80px;
   }
-  
-  /* Display the columns below each other instead of side by side on small screens */
-  /* @media screen and (max-width: 650px) {
-    .column {
-      width: 100%;
-      display: block;
-    }
-  } */
-  
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.432);
-    background-color: #ffffff;
-  }
-  
-  .container {
-    padding: 0px 16px;
-  }
-  
-  .container::after, .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  .title {
-    color: grey;
-    padding-top: -15px;
-  }
+
 
             /*END OF ABOUT PAGE*/
 
-            /* FOOOTER STARTS HERE*/
-footer{
-    min-width: 0;
-    background-color: #d3d1d1;
+
+            /*START OF CONTACT PAGE*/
+.hero-img2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.719)), url(../img/Toledo.jpg);
+    height: 60%;
+    background-position: 10% 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
-    /* z-index: 999; */
-    width: 100%;
 }
 
+.hero-text2{
+    position: absolute;
+    text-align: center;
+    top: 45%;
+    left: 35%;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.c-icons{
+    margin: auto;
+    width: 50%;
+    padding-top: 90px;
+    padding-bottom: 35px;
+}
+
+.c-text{
+    font-weight: 700;
+}
+
+.phone1{
+    float: left;
+    text-align: center;
+    margin-left: 100px;
+}
+
+.phone2{
+    margin-bottom: -20px;
+}
+
+.email1{
+    text-align: center;
+    margin-left: 390px;
+    margin-top: -85px;
+}
+
+.email2{
+    height: 85px;
+    margin-bottom: -20px;
+}
+
+.vline{
+    width: 200px;
+    border: 1px solid #000000;
+    margin: auto;
+    margin-top: 80px;
+    transform: rotate(90deg);
+}
+
+.phone1 .email1{
+    clear: both;
+}
+
+.questions{
+    font-size: 25px;
+    line-height: 39px;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    padding-top: 90px;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 5px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 8px;
+    resize: vertical;
+    background-color: #000000;
+}
+  
+textarea {
+    height: 90px;
+}
+
+.form-button {
+    background-color: #000000e8;
+    color: rgb(219, 219, 219);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+
+.form-button:hover {
+    background-color: #800080;
+}
+
+.ccontainer {
+    width: 450px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 30px;
+    height: 300px;
+    margin-left: 95px;
+}
+
+.row2{
+    margin: auto;
+    width: 50%;
+    padding-bottom: 95px;
+}
+
+.map{
+    margin: auto;
+    width: 50%;
+    padding-bottom: 45px;
+}
+
+.map2{
+    margin-left: 80px;
+}
+            /*END OF CONTACT PAGE*/
+
+
+            /* FOOOTER STARTS HERE*/
+footer{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.icons{
+    float: left;
+    font-size: 25px;
+}
+
+.fa-brands{
+    margin: 10px;
+    color: #000000;
+}
+
+.fa-brands:hover{
+    color: #800080;
+}
+
+.stalwart{
+    margin-left: 610px;
+    width: 100px;
+    color: #000000;
+    font-size: 20px;
+}
+
+.star{
+    float: right;
+    padding: 0px;
+}
+
+.icons .star{
+    clear: both;
+}
+            /* FOOOTER ENDS HERE*/
