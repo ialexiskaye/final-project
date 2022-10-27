@@ -215,8 +215,10 @@ audio{
 }
 
 .col{
-    width: 50%;
+    width: 40%;
     float: left;
+    margin-left: 150px;
+    margin-right: -150px;
 }
 
          /*INDEX ENDS HERE*/
@@ -258,10 +260,10 @@ audio{
 }
 
 .team-header{
-    font-size: 40px;
+    font-size: 50px;
     padding-top: 15px;
     padding-left: 8px;
-    /* text-decoration: solid #000000; */
+    font-family: 'Cormorant Garamond', serif;
 }
 
 /* .team-img{
