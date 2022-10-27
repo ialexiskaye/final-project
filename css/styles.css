@@ -17,12 +17,6 @@ body, html {
 }
 
                 /*NAV BAR STARTS HERE*/
-/* header{
-    background-color: transparent;
-    position: relative;
-    width: 100%;
-} */
-
 .header-row1{
     position: relative;
     height: 70px;
@@ -92,13 +86,10 @@ body, html {
     background-color: #f3f3f3;
     color: #ffffff;
 }
-
-/* .subscribe{
-    padding: 10px;
-} */
-
             /*NAV BAR ENDS HERE*/
 
+
+         /*INDEX STARTS HERE*/
 
 .img-rounds{
     border-radius: 50%;
@@ -186,13 +177,14 @@ body, html {
     float: left;
     margin-bottom: 5px;
     padding: 15px;
-    width: auto;
+    width: 60%;
 }
 
 
 .os-titles{
     font-size: 20px;
     margin-top: -5px;
+    padding-right: 140px;
 }
 
 .clearfix2{
@@ -211,6 +203,23 @@ body, html {
     font-size: 25px;
     margin-bottom: 10px;
 }
+
+.sound-container{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+audio{
+    margin-left: 180px;
+}
+
+.col{
+    width: 50%;
+    float: left;
+}
+
+         /*INDEX ENDS HERE*/
 
 
 
@@ -438,6 +447,7 @@ textarea {
 footer{
     width: 100%;
     margin-top: 50px;
+    display: table;
 }
 
 .icons{
@@ -446,7 +456,6 @@ footer{
 }
 
 .fa-brands{
-    margin: 10px;
     color: #000000;
 }
 
@@ -455,18 +464,17 @@ footer{
 }
 
 .stalwart{
-    margin-left: 610px;
-    width: 100px;
+    text-align: center;
+    /* width: 100px; */
     color: #000000;
     font-size: 20px;
 }
 
 .star{
     float: right;
-    padding: 0px;
 }
 
-.icons .star{
+.icons::after, .star::after{
     clear: both;
 }
             /* FOOOTER ENDS HERE*/
